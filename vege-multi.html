@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i0.wp.com/techblog.bigbasket.com/wp-content/uploads/2018/08/cropped-New-Logo-Form-2-without-tagline-.jpg?ssl=1" type="image/x-icon">
+    <title>-bigbasket</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+       
+        #products{
+            display: grid;
+            grid-template-columns: repeat(3, 220px);
+            gap: 10px;
+            justify-content: center;
+            
+        }
+        .product-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            max-width: 2400px;
+           
+        }
+        .product-item img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .multi-P{
+            text-align: center;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://gumlet-images.assettype.com/afaqs%2F2021-11%2Fc57035f1-ad95-4b5c-881e-086506b1f6db%2Fbb_TATA_Double_line_logo.jpg?w=1200&auto=format%2Ccompress&ogImage=true" alt="Big Basket Logo">
+        </div>
+        <div class="search-box">
+            <div class="search-icon">
+                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-vert.png" alt="Search Icon">
+            </div>
+            <input type="text" placeholder="Search For Products.....">
+            
+        </div>
+        <div class="location">
+            <div class="location-box">
+                <img src="https://img.freepik.com/premium-vector/location-icon_942802-550.jpg" alt="">
+                <span>Select Location</span>
+            </div>
+        </div>
+        <div class="login-signup">
+            <a href="login.html">Login / Sign Up</a>
+        </div>
+        <div class="cart">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiRsMT4Em9vpD9rY1JYD7db-DBS2oTpYFc2nGAh8dig&s" alt="Cart Icon">
+        </div>
+    </div>
+    <!---Navbar End-->
+
+
+    <!---Sec navbar-->
+
+    <nav class="navbar2">
+        <ul class="menu2">
+          <li class="shop-by-category" >
+            Shop by Category <span class="down-arrow" onclick="toggleDropdown(event)" >&#9660;</span>
+            <ul class="sub-menu" id="myDropdown">
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Fruits & Vegetables</a></li>
+                  <li><a href="#">Foodgrains, Oil & Masala</a></li>
+                  <li><a href="#">Bakery, Cakes</a></li>
+                  <li><a href="#">Beverages</a></li>
+                  <li><a href="#">Snacks</a></li>
+                  <li><a href="#">Beauty & Hygiene</a></li>
+                  <li><a href="#">Cleaning & Household</a></li>
+                  <li><a href="#">Kitchen, Pets</a></li>
+                  <li><a href="#">Eggs. Meat</a></li>
+                  <li><a href="#">Gourmet & World food</a></li>
+                  <li><a href="#">Baby care</a></li>
+                  <li><a href="#">Paan corner</a></li>
+                </ul>
+              </div>
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Cuts & Sprouts</a></li>
+                  <li><a href="#">Exotic fruits & Veggies</a></li>
+                  <li><a href="#">Flower Bouquets, Bunches</a></li>
+                  <li><a href="#">Fresh fruits</a></li>
+                  <li><a href="#">Fresh Vegetables</a></li>
+                  <li><a href="#">Herbs & Seasoning</a></li>
+                  <li><a href="#">Orgainc Fruits</a></li>
+                </ul>
+              </div>
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Cut & Peeled Veggies</a></li>
+                  <li><a href="#">Cut fruit, Tender coconut</a></li>
+                  <li><a href="#">Fresh juices & Milkshakes</a></li>
+                  <li><a href="#">Fresh salads</a></li>
+                  <li><a href="#">Recips packs</a></li>
+                </ul>
+              </div>
+            </ul>
+          </li>
+          <li>Exotic Fruits</li>
+          <li>Tea</li>
+          <li>Ghee</li>
+          <li>Nandini</li>
+          <li class="forward-icon">&#187;</li>
+          <li class="secNav1"><img src="https://www.bigbasket.com/media/uploads/banner_images/Smart_basket-250124-1.png" alt="Image 1"></li>
+          <li class="secNav1"><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_offer_28_220921_all.png" alt="Image 2"></li>
+        </ul>
+      </nav>
+      <p class="multi-P">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+    <!---end sec navbar-->
+<!-- Container for products -->
+<div id="products">
+    
+</div>
+<!---Footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="column">
+            <h4>Big Basket</h4>
+            <ul>
+                <li>About us</li>
+                <li>Become a Basket Rider</li>
+                <li>In News</li>
+                <li>Green Basket</li>
+                <li>Privacy Policy</li>
+                <li>Affiliate</li>
+                <li>Terms & Condition</li>
+                <li>Careers at Bigbasket</li>
+                <li>bb instant</li>
+                <li>bb daily</li>
+                <li>bb blog</li>
+                <li>bb now</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Help</h4>
+            <ul>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+                <li>bb Wallet FAQ's</li>
+                <li>bb Wallet T&C's</li>
+                <li>Vendor Connect</li>
+            </ul>
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACYkYS6SDKYdXpgXvZpkKpRBlvwiuZEr2m0o-ejNnleSkXxwU6CfPoDuXQ9sXV6Jxweo&usqp=CAU" alt="">
+            <div class="google-logo">
+                <ul>
+                    <li><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt=""></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        
+    </div>
+    <p class="dotted-line">------------------------------------------------------------------------------------------</p>
+
+    <div class="cities-cont">
+        <h5>Cities We Serve</h5>
+        <ul class="city-list">
+            <li>Jaunpur  &nbsp;&nbsp;|</li>
+            <li>Amroha  &nbsp;&nbsp;|</li>
+            <li>Pratapgarh  &nbsp;&nbsp;|</li>
+            <li>Gondia  &nbsp;&nbsp;|</li>
+            <li>Hubli &nbsp;&nbsp;|</li>
+            <li>Varanasi &nbsp;&nbsp;|</li>
+            <li>Azamgarh &nbsp;&nbsp;|</li>
+            <li>Illahabad &nbsp;&nbsp;|</li>
+            <li>Shrawasti &nbsp;&nbsp;|</li>
+            <li>Ayodhya &nbsp;&nbsp;|</li>
+            <li>Gurugram &nbsp;&nbsp;|</li>
+            <li>Noida &nbsp;&nbsp;|</li>
+            <li>Rampur &nbsp;&nbsp;|</li>
+            <li>Sidhauna &nbsp;&nbsp; |</li>
+            <li>Ghazipur &nbsp;&nbsp;|</li>
+            <li>Kotagiri &nbsp;&nbsp;|</li>
+            <li>Pushpavanam &nbsp;&nbsp;|</li>
+            <li>Harihara &nbsp;&nbsp;|</li>
+            <li>Aluva &nbsp;&nbsp;|</li>
+            <li>Ladakh &nbsp;&nbsp;|</li>
+            <li>Amritsar &nbsp;&nbsp;|</li>
+            <li>Rahatgarh &nbsp;&nbsp;|</li>
+            <li>Bhiwadi &nbsp;&nbsp;|</li>
+            <li>Kurupram &nbsp;&nbsp;|</li>
+            <li>Vinukonda &nbsp;&nbsp;|</li>
+            <li>Jannram &nbsp;&nbsp;|</li>
+            <li>Madakasira &nbsp;&nbsp;|</li>
+
+            <li>Gohana &nbsp;&nbsp;|</li>
+            <li>Kurupuram &nbsp;&nbsp;|</li>
+
+            <li>Karnal &nbsp;&nbsp;|</li>
+            <li>Panipat &nbsp;&nbsp;|</li>
+            <li>Rohtak &nbsp;&nbsp;|</li>
+            <li>Sindgurg &nbsp;&nbsp;|</li>
+            <li>Sodad &nbsp;&nbsp;|</li>
+            <li>Attingal &nbsp;&nbsp;|</li>
+            <li>Bolpur &nbsp;&nbsp;|</li>
+            <li>Katol &nbsp;&nbsp;|</li>
+            <li>Pangodu &nbsp;&nbsp;|</li>
+            <li>Martur &nbsp;&nbsp;|</li>
+            <li>Raichur &nbsp;&nbsp;|</li>
+            <li>Memari &nbsp;&nbsp;|</li>
+            <li>Alambagh &nbsp;&nbsp;|</li>
+            <li>Goa &nbsp;&nbsp;|</li>
+            <li>Bahadurgarh &nbsp;&nbsp;|</li>
+            <li>Bagalkot &nbsp;&nbsp;|</li>
+            <li>Gudalur &nbsp;&nbsp;|</li>
+            <li>Rayaparthi &nbsp;&nbsp;|</li>
+            <li>East garo hills &nbsp;&nbsp;|</li>
+            <li>Haliyal &nbsp;&nbsp;|</li>
+            <li>Ezhupunna &nbsp;&nbsp;|</li>
+
+            <li>Nalgonda &nbsp;&nbsp;|</li>
+
+            <li>Eedu &nbsp;&nbsp;|</li>
+            <li>Chatra &nbsp;&nbsp;|</li>
+
+            <li>Gadag &nbsp;&nbsp;|</li>
+
+            <li>Chatra &nbsp;&nbsp;|</li>
+            <li>Khairabad &nbsp;&nbsp;|</li>
+            <li>Madikeri &nbsp;&nbsp;|</li>
+            <li>Jamuria &nbsp;&nbsp;|</li>
+            <li>Supaul &nbsp;&nbsp;</li>
+
+            <li>Koppal &nbsp;&nbsp;|</li>
+            <li>Masarkh &nbsp;&nbsp;|</li>
+
+            <li>Chapra &nbsp;&nbsp;|</li>
+            <li>Bareily &nbsp;&nbsp;|</li>
+            <li>Agra &nbsp;&nbsp;|</li>
+
+            <li>Hinjewadi &nbsp;&nbsp;</li>
+
+
+
+        </ul>
+    </div>
+    <p class="dotted-line">------------------------------------------------------------------------------------------</p>
+    <div class="foot-Lcont">
+        <div class="footer_list">
+            <ul>
+                <li><b>Popular</b></li>
+                <li>Sunflower Oils</li>
+                <li>Milk</li>
+                <li>Organic & Flour</li>
+                <li>Floor cleaners</li>
+                <li>Frozen Veg food</li>
+            </ul>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li></li>
+                <li>Wheat</li>
+                <li>Healthy drinks</li>
+                <li>Namkeen</li>
+                <li> Juices</li>
+                <li>wipes</li>
+            </ul>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li></li>
+                <li>Ghee</li>
+                <li>Flakes</li>
+                <li>Eggs</li>
+                <li>Leafy Vegetables</li>
+               
+            </ul>
+        </div>
+
+        <div class="footer_list">
+            <ul>
+                <li><b>Popular Brands</b></li>
+                <li>Amul</li>
+                <li>Red-bull</li>
+                <li>Yummiez</li>
+                <li>Britannia</li>
+                <li>Haldiram's</li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+               <li>Show More+</li>
+            </ul>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li></li>
+                <li>Nescafe</li>
+                <li>Elite cake</li>
+                <li>Yera</li>
+                <li>Wow momos</li>
+                <li>momos</li>
+               
+            </ul>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li></li>
+                <li>Ferrero Rocher</li>
+                <li>Dairy milk</li>
+                <li>5 star</li>
+                <li>Perk</li>
+                <li>Munch</li>
+
+               
+            </ul>
+        </div>
+        
+    </div>
+    <div class="copywright">Copyright © 2023-2025 Supermarket Grocery Supplies Pvt Ltd</div>
+   
+</footer>
+
+
+<!---Footer end -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+       
+        var productsData = [
+            {
+                name: "Banana Robusta",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000025_27-fresho-banana-robusta.jpg?tr=w-1920,q=80",
+                category: "Fresho Vegetables",
+                price: "$25"
+            },
+            {
+                name: "Chilli Green",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000333_14-fresho-chilli-green-long-medium.jpg?tr=w-1920,q=80",
+                category: "Fresho Vegetables",
+                price: "$30"
+            },
+            {
+                name: "Coriander",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-1920,q=80",
+                category: "Fresh vegetables",
+                price: "$29"
+            },
+            {
+                name: "Cucumber",
+                image: "https://www.bigbasket.com/media/uploads/p/m/40077518_1-fresho-cucumber.jpg?tr=w-1920,q=80",
+                category: "Vegetables",
+                price: "$35"
+            },
+            {
+                name: "Garlic",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000330_14-fresho-garlic.jpg?tr=w-1920,q=80",
+                category: "Fresh Vegetables",
+                price: "$17"
+            },
+            {
+                name: "Lady finger",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000142_17-fresho-ladies-finger.jpg?tr=w-1920,q=80",
+                category: "Green leaf-veggies",
+                price: "$37"
+            },
+            {
+                name: "onion",
+                image: "https://www.bigbasket.com/media/uploads/p/m/1201414_1-fresho-onion.jpg?tr=w-1920,q=80",
+                category: "Baby products",
+                price: "$32"
+            },
+            {
+                name: "Potato",
+                image: "https://www.bigbasket.com/media/uploads/p/m/40048459_8-fresho-potato-new-crop.jpg?tr=w-1920,q=80",
+                category:"Vegetables",
+                price: "$39"
+            },
+            {
+                name: "Cauliflower",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg?tr=w-1920,q=80",
+                category: "Vegetables",
+                price: "$23"
+            },
+            {
+                name: "baby wipes-organic",
+                image: "https://www.bigbasket.com/media/uploads/p/m/40259423_1-mylo-care-baby-wipes-organic-coconut-oil-neem-safe-for-babys-skin.jpg?tr=w-1920,q=80",
+                category: "Baby products",
+                price: "$45"
+            },
+            {
+                name: "Carrot",
+                image: "https://www.bigbasket.com/media/uploads/p/m/10000070_15-fresho-carrot-orange.jpg?tr=w-1920,q=80",
+                category: "Fresho (orange-loose)",
+                price: "$46"
+            }
+            
+
+            
+            
+
+        ];
+
+       
+        function createProductElement(product) {
+            var productContainer = document.getElementById('products');
+
+            
+            var productItem = document.createElement('div');
+            productItem.classList.add('product-item');
+
+            
+            var productImage = document.createElement('img');
+            productImage.src = product.image;
+            productImage.alt = product.name;
+
+            
+            var productName = document.createElement('h3');
+            productName.textContent = product.name;
+
+            
+            var productCategory = document.createElement('p');
+            productCategory.textContent = product.category;
+
+            
+            var productPrice = document.createElement('p');
+            productPrice.textContent = product.price;
+
+            
+            productItem.appendChild(productImage);
+            productItem.appendChild(productName);
+            productItem.appendChild(productCategory);
+            productItem.appendChild(productPrice);
+
+            
+            productContainer.appendChild(productItem);
+        }
+
+       
+        productsData.forEach(function(product) {
+            createProductElement(product);
+        });
+    });
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

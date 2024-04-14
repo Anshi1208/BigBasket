@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="https://i0.wp.com/techblog.bigbasket.com/wp-content/uploads/2018/08/cropped-New-Logo-Form-2-without-tagline-.jpg?ssl=1" type="image/x-icon">
+    <title>Online Grocery</title>
+
+</head>
+<body>
+    <!---Navbar start-->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://gumlet-images.assettype.com/afaqs%2F2021-11%2Fc57035f1-ad95-4b5c-881e-086506b1f6db%2Fbb_TATA_Double_line_logo.jpg?w=1200&auto=format%2Ccompress&ogImage=true" alt="Big Basket Logo">
+        </div>
+        <div class="search-box">
+            <div class="search-icon">
+                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-vert.png" alt="Search Icon">
+            </div>
+            <input type="text" placeholder="Search For Products.....">
+            
+        </div>
+        <div class="location">
+            <div class="location-box">
+                <img src="https://img.freepik.com/premium-vector/location-icon_942802-550.jpg" alt="">
+                <span>Select Location</span>
+            </div>
+        </div>
+        <div class="login-signup">
+            <a href="login.html">Login / Sign Up</a>
+        </div>
+        <div class="cart">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiRsMT4Em9vpD9rY1JYD7db-DBS2oTpYFc2nGAh8dig&s" alt="Cart Icon">
+        </div>
+    </div>
+    <!---Navbar End-->
+
+
+    <!---Sec navbar-->
+
+    <nav class="navbar2">
+        <ul class="menu2">
+          <li class="shop-by-category" >
+            Shop by Category <span class="down-arrow" onclick="toggleDropdown(event)" >&#9660;</span>
+            <ul class="sub-menu" id="myDropdown">
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Fruits & Vegetables</a></li>
+                  <li><a href="#">Foodgrains, Oil & Masala</a></li>
+                  <li><a href="#">Bakery, Cakes</a></li>
+                  <li><a href="#">Beverages</a></li>
+                  <li><a href="#">Snacks</a></li>
+                  <li><a href="#">Beauty & Hygiene</a></li>
+                  <li><a href="#">Cleaning & Household</a></li>
+                  <li><a href="#">Kitchen, Pets</a></li>
+                  <li><a href="#">Eggs. Meat</a></li>
+                  <li><a href="#">Gourmet & World food</a></li>
+                  <li><a href="#">Baby care</a></li>
+                  <li><a href="#">Paan corner</a></li>
+                </ul>
+              </div>
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Cuts & Sprouts</a></li>
+                  <li><a href="#">Exotic fruits & Veggies</a></li>
+                  <li><a href="#">Flower Bouquets, Bunches</a></li>
+                  <li><a href="#">Fresh fruits</a></li>
+                  <li><a href="#">Fresh Vegetables</a></li>
+                  <li><a href="#">Herbs & Seasoning</a></li>
+                  <li><a href="#">Orgainc Fruits</a></li>
+                </ul>
+              </div>
+              <div class="column1">
+                <ul>
+                  <li><a href="#">Cut & Peeled Veggies</a></li>
+                  <li><a href="#">Cut fruit, Tender coconut</a></li>
+                  <li><a href="#">Fresh juices & Milkshakes</a></li>
+                  <li><a href="#">Fresh salads</a></li>
+                  <li><a href="#">Recips packs</a></li>
+                </ul>
+              </div>
+            </ul>
+          </li>
+          <li>Exotic Fruits</li>
+          <li>Tea</li>
+          <li>Ghee</li>
+          <li>Nandini</li>
+          <li class="forward-icon">&#187;</li>
+          <li class="secNav1"><img src="https://www.bigbasket.com/media/uploads/banner_images/Smart_basket-250124-1.png" alt="Image 1"></li>
+          <li class="secNav1"><img src="https://www.bigbasket.com/media/uploads/banner_images/hp_cmc_m_offer_28_220921_all.png" alt="Image 2"></li>
+        </ul>
+      </nav>
+
+    <!---end sec navbar-->
+
+    
+    <!----Image slider start-->
+    <div class="slider">
+        <div class="slides" active>
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/B2C032109362-17153-web-100424-all.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="slides">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/B2C032109362-17152-web-banner-100424.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="slides">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/B2C032109362-17156-web-100424-all.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+    <!---Image slider end-->
+
+    <!--Next producat-bar-->
+    <div class="product-row">
+        <div class="prodRow-items">Egg, Meat & Fish</div>
+        <div class="prodRow-item">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_topstrip_m_250923_02.png?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="prodRow-items1">Ayurveda</div>
+        <div class="prodRow-items">Buy more save more</div>
+        <div class="prodRow-items">Deals of the day</div>
+        <div class="prodRow-items">Combo store</div>
+    </div>
+    <!--NProd end-->
+
+    <!---Product-sec-->
+    <div class="Pslider-container">
+        <h3 class="smart-basket">My smart basket</h3>
+        <div class="Pslider">
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/10000067_23-fresho-capsicum-green.jpg?tr=w-1920,q=80" alt="Image 1">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Capsicum- Green (Loose)</p>
+
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">10kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/10000070_15-fresho-carrot-orange.jpg?tr=w-1920,q=80" alt="Image 2">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Carrot - Orange (Loose)</p>
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">1kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option">
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Cauliflower</p>
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">1 Piece</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option">
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="product-priceCont">
+                        <span class="product-price">$22</span> &nbsp;&nbsp;<span class="product-oldP">$45</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Coriander Leaves</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">250g</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40077518_1-fresho-cucumber.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Cucumber</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">2kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$20</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/10000142_17-fresho-ladies-finger.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Lady's Finger (Loose)</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">4kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option">
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$12</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/1201414_1-fresho-onion.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Onion</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">5kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$11</span> &nbsp;&nbsp;<span class="product-oldP">$18</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40048459_8-fresho-potato-new-crop.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Fresho</p>
+                    <p>Potato</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">10kg</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option">
+                                <div class="item">5kg</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">250g</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">500g</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1kg</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$19</span> &nbsp;&nbsp;<span class="product-oldP">$20</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="navigation">
+            <a href="vege-multi.html" target="_self">View All</a>
+            <div class="arrows">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!---Bank Offers-->
+    <h2 class="offersTitle">Bank Offers</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_tataneu-card_060424.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_amazon-pay_060424.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_Amex_060424.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/3c5df782-1789-4bea-8403-9fd766652b34/t1_hp_aff_m_indus-20_060424.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+
+    <!------Best sellers-->
+    <div class="Pslider-container">
+        <h3 class="smart-basket">Best Sellers</h3>
+        <div class="Pslider">
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/1224871_1-littles-baby-wipes-with-aloe-vera-jojoba-oil-vitamin-e.jpg?tr=w-1920,q=80" alt="Image 1">
+                <div class="product-Text">
+                    <p class="prod-title">Littles</p>
+                    <p>Baby wipes- Jojoba</p>
+
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">3X88 pcs-Multipack</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option">
+                                <div class="item">5pcs</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">2pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">5 packet</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 packet</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40202339_4-pampers-baby-wipes-with-aloe.jpg?tr=w-1920,q=80" alt="Image 2">
+                <div class="product-Text">
+                    <p class="prod-title">Pampers</p>
+                    <p>Baby wipes-with Aloe</p>
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">72 pcs-pack of 2</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option">
+                                <div class="item">5 pack</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">25 pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">50 pcs</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pack</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/1201455_3-bigbasket-baby-wipes-sea-breeze-no-paraben-double-moisturizing.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">BigBasket</p>
+                    <p>Baby wipes-No paraben</p>
+
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">2x80 pcs-Multipack</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5 pcs</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">25 pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option">
+                                <div class="item">50 pcs</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pack</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="product-priceCont">
+                        <span class="product-price">$22</span> &nbsp;&nbsp;<span class="product-oldP">$45</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40054348_8-johnsons-baby-baby-skincare-wipes-super-saver-pack.jpg?tr=w-1920,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Johnson's Baby</p>
+                    <p>Baby skincare wipes</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">72 pcs</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option">
+                                <div class="item">5 pcs</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">25 pack</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">50 pcs</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="item">1 pack</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40085597_6-bigbasket-baby-wipes-fresh-no-paraben-double-moisturizing.jpg?tr=w-2048,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">BigBasket</p>
+                    <p>Baby wipes</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">80 pcs</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5 pcs</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">25 pack</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">5 pcs</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pcs</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$11</span> &nbsp;&nbsp;<span class="product-oldP">$81</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/1226972_1-littles-baby-diaper-pants-xl-with-wetness-indicator-12-hours-absorption.jpg?tr=w-2048,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Littles</p>
+                    <p>Baby Diaper-paint</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">2x24Pcs-Multipack</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5 pack</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">25 pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">50 pack</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pcs</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$20</span> &nbsp;&nbsp;<span class="product-oldP">$29</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/1201457_3-bigbasket-baby-wipes-cherry-blossom-no-paraben-double-moisturizing.jpg?tr=w-2048,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">BigBaset</p>
+                    <p>Baby wipes-Cherry Blossoms</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">5pcs</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5 packet</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">25 pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option">
+                                <div class="item">5 pcs</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pcs</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$16</span> &nbsp;&nbsp;<span class="product-oldP">$21</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Pslide">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40085597_6-bigbasket-baby-wipes-fresh-no-paraben-double-moisturizing.jpg?tr=w-2048,q=80" alt="">
+                <div class="product-Text">
+                    <p class="prod-title">Little's</p>
+                    <p>Baby wipes-with Lid</p>
+                    <div class="select-container">
+                        <div class="custom-select">
+                            <div class="selected-option">80 pcs</div>
+                            <div class="arrow">&#9660;</div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="option"> 
+                                <div class="item">5 pcs</div>
+                                <div class="price">₹90</div>
+                            </div>
+                            <div class="option">
+                                <div class="item">25 pcs</div>
+                                <div class="price">
+                                    <span class="discount">48% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹10</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹19</span>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="option"> 
+                                <div class="item">5 pack</div>
+                                <div class="price">
+                                    <span class="discount">55% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹23</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹51</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="option"> 
+                                <div class="item">1 pcs</div>
+                                <div class="price">
+                                    <span class="discount">27% off</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="new-price">₹68</span>&nbsp;&nbsp;&nbsp;
+                                    <span class="old-price">₹93</span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <div class="product-priceCont">
+                        <span class="product-price">$29</span> &nbsp;&nbsp;<span class="product-oldP">$30</span>
+                    </div>
+                    <div class="prod-saveLogo">
+                        <img src="https://w7.pngwing.com/pngs/860/512/png-transparent-instagram-social-media-save-instagram-instagram-save-social-media-logo-icon.png" alt="">
+                        <button class="ProdAdd">Add</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="navigation">
+           
+           <a href="multi-baby.html" target="_blank">Show More</a>
+            <div class="arrows">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!----Best sellers end-->
+
+    <!--Top offers-->
+
+    <h2 class="offersTitle">Top Offers</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_dow-topoffersStorefront_m_480_250723_01.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_big-packs-topoffersStorefront_m_480_250723_02.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_combos-topoffersStorefront_m_480_250723_03.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/2b94a9cf-895f-460d-849a-1eee860c974c/hp_30-corner-topoffersStorefront_m_480_250723_04.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+
+    <!--Fruits and vegetables-->
+
+    <h2 class="FruitsVege">Fruits and Vegetables </h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_fresh-vegetables_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_fresh-fruits_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_cuts-&-exotics_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/41a0810e-1fc3-46e4-9d2c-7d9e79e0aa29/hp_f&v_m_herbs-&-seasoning_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+    <!--Daily staples-->
+
+    <h2 class="FruitsVege">Your Daily Staples</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_atta-flour-staplesStorefront_m_480_250323_01.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_rice-staplesStorefront_m_480_250323_02.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dals-pulses-staplesStorefront_m_480_250323_03.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_cooking-oils-staplesStorefront_m_480_250323_04.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_dry-fruits-staplesStorefront_m_480_250323_05.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/0bb0a6da-8713-48fc-a40d-93cd63ca2025/hp_salt-staplesStorefront_m_480_250323_06.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+    <!--Beverages-->
+
+    <h2 class="FruitsVege">Beverages</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_health-drinks-&-supplements_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_tea-&-coffee_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_flavoured-&-soya-milk_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_juices_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_energy-drinks_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/e4a9856b-dc3f-4927-a5a1-8edfe8d7dc38/hp_bev_m_soft-drinks-&-more_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+
+    <!--Snacks Store-->
+    <h2 class="FruitsVege">Snacks Store</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_biscuits-&-namkeens_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_breakfast-cereals_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_pasta-sauces-&-more_480_270723.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/09ece9f7-7ac9-4d1e-afbb-f8ac572add38/hp_sbf_m_sweet-cravings_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        
+    </div>
+
+    <!--Cleaning & household-->
+    <h2 class="FruitsVege">Cleaning & Households</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_cleaners_480_250723.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_detergents-&-fabric-care_480_250723.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_paper-disposables-&-garbage-bags_480_250723.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/fefafda6-5ef7-4ed2-8fee-2574720666d7/hp_c&h_m_freshner_480_250723.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        
+    </div>
+
+    <!--Beauty & Hygiene-->
+    <h2 class="FruitsVege">Beauty & Hygiene</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_-makeup_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_moisturiser_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_perfumes_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_mens-shaving_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_minimum-30-off_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/50aa5fc7-cfa4-4919-b3ba-064fd9aa9441/hp_b&h_m_big-pack-bigger-saving%20bf_480_250923.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+    <!---Home & Kitchen-->
+
+    <h2 class="FruitsVege">Home & Kitchen</h2>
+    <div class="bank-section">
+        
+
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GMunder-99_m_250723_01.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GM100-199_m_250723_02.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GMStorefront-pressure-cooker_m_250723_03.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GMStorefront-stationery-store_m_250723_04.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GM-storage-container_m_250723_05.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <div class="offers-section">
+            <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/91e53046-98e0-4c5b-ae53-7d073e5210e1/1efc132e-4754-4359-a9a3-a9c3ec267d28/hp_GM-cleaning-needs_m_250723_06.jpg?tr=w-1920,q=80" alt="">
+        </div>
+    </div>
+
+    <!---Last image slider-->
+    <div class="custom-slider-container">
+        <div class="custom-slider">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250923_400.jpg?tr=w-1920,q=80" alt="">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250923_400.jpg?tr=w-1920,q=80" alt="">
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250923_400.jpg?tr=w-1920,q=80" alt="">
+        </div>
+        <button class="custom-prev" onclick="customPrevSlide()">&#10094;</button>
+        <button class="custom-next" onclick="customNextSlide()">&#10095;</button>
+    </div>
+
+    <!---End last image slider-->
+
+    <!---Last text-->
+   
+    <div class="last-text">
+        <h5>big basket - Online Grocery store</h5>
+        <p>
+            Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains, dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to the doorsteps of over 10 million satisfied customers. From essential household cleaning products to the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.
+            <br>
+            <br>
+    
+    
+    In these times, we've eliminated the stress associated with shopping for daily essentials. You can now effortlessly order all your household products and groceries online. Plus, the added convenience of finding all your requirements at a single source, coupled with substantial savings, demonstrates that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries. Online grocery shopping has become second nature. And when it comes to freshness, whether it's fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat, fish, and more with just a few clicks.
+    <br>
+    <br>
+    
+    
+    
+    We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that all your groceries, snacks and branded foods reach you on time.
+    <br>
+    <br>
+    
+    Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from early morning delivery for early birds to late-night delivery for those on the night shift. bigbasket caters to every schedule.
+    <br>
+    <br>
+    
+    Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries. Choose from 5000+ grocery essentials. bbnow is available only in select cities.
+    <br>
+    <br>
+    
+    Whether it's a last-minute dinner party or you simply need something urgently, we've got you covered. This service exemplifies our commitment to providing you with not just the widest range of products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to destination for all your immediate grocery needs.
+        </p>
+       
+    </div>
+     <!--End last text-->
+
+     <!---Footer-->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="column">
+                <h4>Big Basket</h4>
+                <ul>
+                    <li>About us</li>
+                    <li>Become a Basket Rider</li>
+                    <li>In News</li>
+                    <li>Green Basket</li>
+                    <li>Privacy Policy</li>
+                    <li>Affiliate</li>
+                    <li>Terms & Condition</li>
+                    <li>Careers at Bigbasket</li>
+                    <li>bb instant</li>
+                    <li>bb daily</li>
+                    <li>bb blog</li>
+                    <li>bb now</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Help</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Contact Us</li>
+                    <li>bb Wallet FAQ's</li>
+                    <li>bb Wallet T&C's</li>
+                    <li>Vendor Connect</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACYkYS6SDKYdXpgXvZpkKpRBlvwiuZEr2m0o-ejNnleSkXxwU6CfPoDuXQ9sXV6Jxweo&usqp=CAU" alt="">
+                <div class="google-logo">
+                    <ul>
+                        <li><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt=""></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="social-media-links">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <p class="dotted-line">------------------------------------------------------------------------------------------</p>
+
+        <div class="cities-cont">
+            <h5>Cities We Serve</h5>
+            <ul class="city-list">
+                <li>Jaunpur  &nbsp;&nbsp;|</li>
+                <li>Amroha  &nbsp;&nbsp;|</li>
+                <li>Pratapgarh  &nbsp;&nbsp;|</li>
+                <li>Gondia  &nbsp;&nbsp;|</li>
+                <li>Hubli &nbsp;&nbsp;|</li>
+                <li>Varanasi &nbsp;&nbsp;|</li>
+                <li>Azamgarh &nbsp;&nbsp;|</li>
+                <li>Illahabad &nbsp;&nbsp;|</li>
+                <li>Shrawasti &nbsp;&nbsp;|</li>
+                <li>Ayodhya &nbsp;&nbsp;|</li>
+                <li>Gurugram &nbsp;&nbsp;|</li>
+                <li>Noida &nbsp;&nbsp;|</li>
+                <li>Rampur &nbsp;&nbsp;|</li>
+                <li>Sidhauna &nbsp;&nbsp; |</li>
+                <li>Ghazipur &nbsp;&nbsp;|</li>
+                <li>Kotagiri &nbsp;&nbsp;|</li>
+                <li>Pushpavanam &nbsp;&nbsp;|</li>
+                <li>Harihara &nbsp;&nbsp;|</li>
+                <li>Aluva &nbsp;&nbsp;|</li>
+                <li>Ladakh &nbsp;&nbsp;|</li>
+                <li>Amritsar &nbsp;&nbsp;|</li>
+                <li>Rahatgarh &nbsp;&nbsp;|</li>
+                <li>Bhiwadi &nbsp;&nbsp;|</li>
+                <li>Kurupram &nbsp;&nbsp;|</li>
+                <li>Vinukonda &nbsp;&nbsp;|</li>
+                <li>Jannram &nbsp;&nbsp;|</li>
+                <li>Madakasira &nbsp;&nbsp;|</li>
+
+                <li>Gohana &nbsp;&nbsp;|</li>
+                <li>Kurupuram &nbsp;&nbsp;|</li>
+
+                <li>Karnal &nbsp;&nbsp;|</li>
+                <li>Panipat &nbsp;&nbsp;|</li>
+                <li>Rohtak &nbsp;&nbsp;|</li>
+                <li>Sindgurg &nbsp;&nbsp;|</li>
+                <li>Sodad &nbsp;&nbsp;|</li>
+                <li>Attingal &nbsp;&nbsp;|</li>
+                <li>Bolpur &nbsp;&nbsp;|</li>
+                <li>Katol &nbsp;&nbsp;|</li>
+                <li>Pangodu &nbsp;&nbsp;|</li>
+                <li>Martur &nbsp;&nbsp;|</li>
+                <li>Raichur &nbsp;&nbsp;|</li>
+                <li>Memari &nbsp;&nbsp;|</li>
+                <li>Alambagh &nbsp;&nbsp;|</li>
+                <li>Goa &nbsp;&nbsp;|</li>
+                <li>Bahadurgarh &nbsp;&nbsp;|</li>
+                <li>Bagalkot &nbsp;&nbsp;|</li>
+                <li>Gudalur &nbsp;&nbsp;|</li>
+                <li>Rayaparthi &nbsp;&nbsp;|</li>
+                <li>East garo hills &nbsp;&nbsp;|</li>
+                <li>Haliyal &nbsp;&nbsp;|</li>
+                <li>Ezhupunna &nbsp;&nbsp;|</li>
+
+                <li>Nalgonda &nbsp;&nbsp;|</li>
+
+                <li>Eedu &nbsp;&nbsp;|</li>
+                <li>Chatra &nbsp;&nbsp;|</li>
+
+                <li>Gadag &nbsp;&nbsp;|</li>
+
+                <li>Chatra &nbsp;&nbsp;|</li>
+                <li>Khairabad &nbsp;&nbsp;|</li>
+                <li>Madikeri &nbsp;&nbsp;|</li>
+                <li>Jamuria &nbsp;&nbsp;|</li>
+                <li>Supaul &nbsp;&nbsp;</li>
+
+                <li>Koppal &nbsp;&nbsp;|</li>
+                <li>Masarkh &nbsp;&nbsp;|</li>
+
+                <li>Chapra &nbsp;&nbsp;|</li>
+                <li>Bareily &nbsp;&nbsp;|</li>
+                <li>Agra &nbsp;&nbsp;|</li>
+
+                <li>Hinjewadi &nbsp;&nbsp;</li>
+
+
+
+            </ul>
+        </div>
+        <p class="dotted-line">------------------------------------------------------------------------------------------</p>
+        <div class="foot-Lcont">
+            <div class="footer_list">
+                <ul>
+                    <li><b>Popular</b></li>
+                    <li>Sunflower Oils</li>
+                    <li>Milk</li>
+                    <li>Organic & Flour</li>
+                    <li>Floor cleaners</li>
+                    <li>Frozen Veg food</li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li></li>
+                    <li>Wheat</li>
+                    <li>Healthy drinks</li>
+                    <li>Namkeen</li>
+                    <li> Juices</li>
+                    <li>wipes</li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li></li>
+                    <li>Ghee</li>
+                    <li>Flakes</li>
+                    <li>Eggs</li>
+                    <li>Leafy Vegetables</li>
+                   
+                </ul>
+            </div>
+
+            <div class="footer_list">
+                <ul>
+                    <li><b>Popular Brands</b></li>
+                    <li>Amul</li>
+                    <li>Red-bull</li>
+                    <li>Yummiez</li>
+                    <li>Britannia</li>
+                    <li>Haldiram's</li>
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   <li>Show More+</li>
+                </ul>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li></li>
+                    <li>Nescafe</li>
+                    <li>Elite cake</li>
+                    <li>Yera</li>
+                    <li>Wow momos</li>
+                    <li>momos</li>
+                   
+                </ul>
+            </div>
+            <div class="footer_list">
+                <ul>
+                    <li></li>
+                    <li>Ferrero Rocher</li>
+                    <li>Dairy milk</li>
+                    <li>5 star</li>
+                    <li>Perk</li>
+                    <li>Munch</li>
+
+                   
+                </ul>
+            </div>
+            
+        </div>
+        <div class="copywright">Copyright © 2023-2025 Supermarket Grocery Supplies Pvt Ltd</div>
+       
+    </footer>
+
+   
+    <!---Footer end -->
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>

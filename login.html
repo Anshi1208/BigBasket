@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login & Signup</title>
+<style>
+    
+
+    .containerlogin {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: 380px;
+        width: 42%;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .left-section, .right-section {
+        padding: 20px;
+        border-radius: 0 10px 10px 0;
+    
+    }
+
+    .left-section {
+        flex: 1;
+        margin-right: 20px;
+       
+    }
+
+    .right-section {
+        flex: 1;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature {
+        padding: 5px;
+    }
+
+    .feature img {
+        height: 30px;
+        width: 45px;
+        margin-top: 15px;
+    }
+    .ChooseLogin{
+        color: grey;
+    }
+
+    hr {
+        margin: 10px 0;
+        margin-top: 20px;
+    }
+
+    .find-us {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .find-us img {
+        height: 40px;
+        width: 45px;
+        margin-right: 10px;
+        border: 1px solid grey;
+        border-radius: 8px;
+    }
+
+    .lineLOG {
+        height: 2px;
+        background-color: orange;
+        margin-bottom: 20px;
+        width: 14%;
+    }
+
+    form input[type="text"],
+    form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .terms {
+        font-size: 12px;
+        color: #333;
+        line-height: 1.2;
+    }
+    .feature p{
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+
+<div class="containerlogin">
+    <div class="left-section">
+        <h5 class="ChooseLogin">Why Choose Basket?</h5>
+        <div class="features">
+            <div class="feature">
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/quality-1749749-1488502.png"
+                    alt="">
+                    <p>Quality</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/4474/4474343.png" alt="">
+                <p>On-time</p>
+            </div>
+            <div class="feature">
+                <img src="https://as2.ftcdn.net/v2/jpg/04/74/20/47/1000_F_474204732_cnXB7mO1zgxozBHc3QSrrRsLUcpvSjvc.jpg"
+                    alt="">
+                    <p>Easy return</p>
+            </div>
+            <div class="feature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzD1M2QDxVtsCBakpH1DO4SGRbnPP7uoTDC74izKAMVQ&s"
+                    alt="">
+                    <p>Free delivery</p>
+            </div>
+        </div>
+        <hr>
+        <div class="find-us">
+            <p>Find Us on </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh97xlWMMRmsYArwu2DSAgCfE7zyZSJuq5YNGhN8y3nA&s"
+                alt="Play Store Icon">
+            <img src="https://www.freeiconspng.com/uploads/apple-icon-4.png" alt="Apple Store Icon">
+        </div>
+    </div>
+    <div class="right-section">
+        <div id="signupForm">
+            <h2>Signup</h2>
+            <p>Using OTP</p>
+            <div class="lineLOG"></div>
+            <form id="signupFormFields">
+                <input type="text" id="phoneNumberSignup" placeholder="Enter Phone Number or Email ID" required><br>
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+        <div id="loginForm" style="display:none;">
+            <h2>Login</h2>
+            <p>Using OTP</p>
+            <div class="line"></div>
+            <form id="loginFormFields">
+                <input type="text" id="phoneNumberLogin" placeholder="Enter Phone Number or Email ID" required><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <p class="terms">By continuing, I accept tcp-bigbasket terms and conditions & privacy policy. This site
+            is protected by reCAPTCHA and the Google Privacy Policy and Terms of Services apply.</p>
+    </div>
+</div>
+
+<script>
+    function saveUserCredentials(username, password) {
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+    }
+
+
+    function checkUserCredentials(username, password) {
+        return localStorage.getItem('username') === username && localStorage.getItem('password') === password;
+    }
+
+    
+    function handleSignupFormSubmission(event) {
+        event.preventDefault();
+        var username = document.getElementById('phoneNumberSignup').value;
+        var password = ''; 
+        saveUserCredentials(username, password);
+        alert('Signup successful! You can now login.');
+        document.getElementById('signupForm').style.display = 'none';
+        document.getElementById('loginForm').style.display = 'block';
+    }
+
+    function handleLoginFormSubmission(event) {
+        event.preventDefault();
+        var username = document.getElementById('phoneNumberLogin').value;
+        var password = ''; 
+        if (checkUserCredentials(username, password)) {
+            alert('Login successful!');
+            
+        } else {
+            alert('Wrong Credentials.');
+        }
+    }
+
+    
+    document.getElementById('signupFormFields').addEventListener('submit', handleSignupFormSubmission);
+
+    
+    document.getElementById('loginFormFields').addEventListener('submit', handleLoginFormSubmission);
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    
+    function saveUserCredentials(username, password) {
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+    }
+
+    
+    function checkUserCredentials(username, password) {
+        return localStorage.getItem('username') === username && localStorage.getItem('password') === password;
+    }
+
+   
+    function handleFormSubmission(event) {
+        event.preventDefault();
+        var username, password;
+
+        if (this.id === 'signupFormFields') {
+            username = document.getElementById('phoneNumberSignup').value;
+            password = ''; 
+            saveUserCredentials(username, password);
+            alert('Signup successful! You can now login.');
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+        } else if (this.id === 'loginFormFields') {
+            username = document.getElementById('phoneNumberLogin').value;
+            password = ''; 
+            if (checkUserCredentials(username, password)) {
+                alert('Login successful!');
+                
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid username or password.');
+            }
+        }
+    }
+
+   
+    document.getElementById('signupFormFields').addEventListener('submit', handleFormSubmission);
+    document.getElementById('loginFormFields').addEventListener('submit', handleFormSubmission);
+});
+</script>
+
+</body>
+</html>
